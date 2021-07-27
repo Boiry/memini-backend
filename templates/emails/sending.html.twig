@@ -1,0 +1,63 @@
+{% apply inline_css %}
+
+    <style>
+    body {
+        background: linear-gradient(to bottom left, #1a006e, #511b86);
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        background-repeat: no-repeat;
+        background-size: cover;  
+        background-attachment: fixed; 
+        height: 25em;
+        width: 100vh;
+        display: flex;
+        margin: auto;
+        padding: 0.4em;
+        text-align: center;
+        font-size: 1.5em;
+        
+    }
+
+    img {
+        height: 10vh;
+    }
+
+    div {
+        margin: auto;
+    }
+
+    .content {
+        padding: 0.4em;
+    }
+
+    .content {
+        text-align: center;
+    }
+    
+    </style>
+    <body class="app">
+
+        <div>
+            <img src="{{ email.image('@images/memini_logo2.png')}}" alt="Logo">
+        </div>
+        
+        <div class="content">
+
+            <h1>MEMINI</h1>
+
+            <h2>Bonjour {{memini.user.name}}</h2>
+
+            <p>Le memini envoyé le {{date}} est arrivé</p>
+
+            <p>Remontez le temps et venez le lire pour vous souvenir de quoi il s'agit !</p>
+
+            <p>Rendez-vous sur <a href="http://ec2-100-26-163-196.compute-1.amazonaws.com/">Memini</p>
+        </div>
+        
+        <div>
+            <img src="{{ email.image('@images/delorean.gif')}}" alt="">
+        </div>
+
+    </body>
+
+{% endapply %}

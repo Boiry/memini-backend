@@ -1,0 +1,7 @@
+twig:
+    default_path: '%kernel.project_dir%/templates'
+
+    paths:
+        '%kernel.project_dir%/../app-react/src/assets': images
+        '%kernel.project_dir%/../app-react/src/styles': style
+
